@@ -37,10 +37,12 @@ struct InternalKeys {
 }
 
 
-#if !os(OSX) && !os(watchOS) && !os(visionOS)
+#if canImport(UIKit) && !os(watchOS) && !os(tvOS) && !os(macOS)
+import UIKit
+
 extension UIDevice {
     var iPhoneX: Bool {
         return UIScreen.main.nativeBounds.height == 2436
     }
 }
-#endif // !os(OSX)
+#endif  // canImport(UIKit)
