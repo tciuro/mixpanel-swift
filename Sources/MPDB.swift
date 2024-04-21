@@ -9,6 +9,8 @@
 import Foundation
 import CSQLite
 
+typealias sqlite3_destructor_type = (@convention(c) (UnsafeMutableRawPointer?) -> Void)?
+
 class MPDB {
     private var connection: OpaquePointer?
     private let SQLITE_TRANSIENT = unsafeBitCast(-1, to: sqlite3_destructor_type.self)
