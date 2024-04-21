@@ -14,10 +14,10 @@
 		51DD567C1D306B740045D3DB /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD56791D306B740045D3DB /* Logger.swift */; };
 		51DD56831D306B7B0045D3DB /* PrintLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD56801D306B7B0045D3DB /* PrintLogging.swift */; };
 		51DD56841D306B7B0045D3DB /* FileLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD56811D306B7B0045D3DB /* FileLogging.swift */; };
-		59B2CA562BD56BD30038DE9F /* CSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 59B2CA552BD56BD30038DE9F /* CSQLite */; };
-		59B2CA582BD56BDF0038DE9F /* CSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 59B2CA572BD56BDF0038DE9F /* CSQLite */; };
-		59B2CA5A2BD56BE40038DE9F /* CSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 59B2CA592BD56BE40038DE9F /* CSQLite */; };
-		59B2CA5C2BD56BE80038DE9F /* CSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 59B2CA5B2BD56BE80038DE9F /* CSQLite */; };
+		593A16AE2BD5737D00678CC3 /* CSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 593A16AD2BD5737D00678CC3 /* CSQLite */; };
+		593A16B02BD5738900678CC3 /* CSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 593A16AF2BD5738900678CC3 /* CSQLite */; };
+		593A16B22BD5739700678CC3 /* CSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 593A16B12BD5739700678CC3 /* CSQLite */; };
+		593A16B42BD5739C00678CC3 /* CSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 593A16B32BD5739C00678CC3 /* CSQLite */; };
 		673ABE3A21360CBE00B1784B /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673ABE3921360CBE00B1784B /* Group.swift */; };
 		67FF65E421878414005161FA /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673ABE3921360CBE00B1784B /* Group.swift */; };
 		67FF65E521878416005161FA /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673ABE3921360CBE00B1784B /* Group.swift */; };
@@ -138,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59B2CA5C2BD56BE80038DE9F /* CSQLite in Frameworks */,
+				593A16B42BD5739C00678CC3 /* CSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59B2CA562BD56BD30038DE9F /* CSQLite in Frameworks */,
+				593A16AE2BD5737D00678CC3 /* CSQLite in Frameworks */,
 				E15FF7C61D02C9E10076CDE3 /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59B2CA582BD56BDF0038DE9F /* CSQLite in Frameworks */,
+				593A16B02BD5738900678CC3 /* CSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59B2CA5A2BD56BE40038DE9F /* CSQLite in Frameworks */,
+				593A16B22BD5739700678CC3 /* CSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +342,7 @@
 			);
 			name = Mixpanel_watchOS;
 			packageProductDependencies = (
-				59B2CA5B2BD56BE80038DE9F /* CSQLite */,
+				593A16B32BD5739C00678CC3 /* CSQLite */,
 			);
 			productName = Mixpanel_watchOS;
 			productReference = 86F86E81224404BD00B69832 /* Mixpanel.framework */;
@@ -363,7 +363,7 @@
 			);
 			name = Mixpanel;
 			packageProductDependencies = (
-				59B2CA552BD56BD30038DE9F /* CSQLite */,
+				593A16AD2BD5737D00678CC3 /* CSQLite */,
 			);
 			productName = Mixpanel;
 			productReference = E115947D1CFF1491007F8B4F /* Mixpanel.framework */;
@@ -384,7 +384,7 @@
 			);
 			name = Mixpanel_tvOS;
 			packageProductDependencies = (
-				59B2CA572BD56BDF0038DE9F /* CSQLite */,
+				593A16AF2BD5738900678CC3 /* CSQLite */,
 			);
 			productName = Mixpanel_tvOS;
 			productReference = E12782B31D4AB4B30025FB05 /* Mixpanel.framework */;
@@ -405,7 +405,7 @@
 			);
 			name = Mixpanel_macOS;
 			packageProductDependencies = (
-				59B2CA592BD56BE40038DE9F /* CSQLite */,
+				593A16B12BD5739700678CC3 /* CSQLite */,
 			);
 			productName = Mixpanel_OSX;
 			productReference = E1F15FC91E64A10700391AE3 /* Mixpanel.framework */;
@@ -453,7 +453,7 @@
 			);
 			mainGroup = E11594731CFF1491007F8B4F;
 			packageReferences = (
-				59B2CA542BD56BD30038DE9F /* XCRemoteSwiftPackageReference "CSQLite" */,
+				593A16AC2BD5737D00678CC3 /* XCRemoteSwiftPackageReference "CSQLite" */,
 			);
 			productRefGroup = E115947E1CFF1491007F8B4F /* Products */;
 			projectDirPath = "";
@@ -1102,7 +1102,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		59B2CA542BD56BD30038DE9F /* XCRemoteSwiftPackageReference "CSQLite" */ = {
+		593A16AC2BD5737D00678CC3 /* XCRemoteSwiftPackageReference "CSQLite" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sbooth/CSQLite";
 			requirement = {
@@ -1113,24 +1113,24 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		59B2CA552BD56BD30038DE9F /* CSQLite */ = {
+		593A16AD2BD5737D00678CC3 /* CSQLite */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 59B2CA542BD56BD30038DE9F /* XCRemoteSwiftPackageReference "CSQLite" */;
+			package = 593A16AC2BD5737D00678CC3 /* XCRemoteSwiftPackageReference "CSQLite" */;
 			productName = CSQLite;
 		};
-		59B2CA572BD56BDF0038DE9F /* CSQLite */ = {
+		593A16AF2BD5738900678CC3 /* CSQLite */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 59B2CA542BD56BD30038DE9F /* XCRemoteSwiftPackageReference "CSQLite" */;
+			package = 593A16AC2BD5737D00678CC3 /* XCRemoteSwiftPackageReference "CSQLite" */;
 			productName = CSQLite;
 		};
-		59B2CA592BD56BE40038DE9F /* CSQLite */ = {
+		593A16B12BD5739700678CC3 /* CSQLite */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 59B2CA542BD56BD30038DE9F /* XCRemoteSwiftPackageReference "CSQLite" */;
+			package = 593A16AC2BD5737D00678CC3 /* XCRemoteSwiftPackageReference "CSQLite" */;
 			productName = CSQLite;
 		};
-		59B2CA5B2BD56BE80038DE9F /* CSQLite */ = {
+		593A16B32BD5739C00678CC3 /* CSQLite */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 59B2CA542BD56BD30038DE9F /* XCRemoteSwiftPackageReference "CSQLite" */;
+			package = 593A16AC2BD5737D00678CC3 /* XCRemoteSwiftPackageReference "CSQLite" */;
 			productName = CSQLite;
 		};
 /* End XCSwiftPackageProductDependency section */
