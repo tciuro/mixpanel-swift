@@ -1,14 +1,15 @@
 {
+  "originHash" : "a6bb5608ebcd382d06be2c02f2db16accaa147ef9758af66102cb2d755c88c97",
   "pins" : [
     {
-      "identity" : "csqlite",
+      "identity" : "csqlite?tab=readme-ov-file",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/sbooth/CSQLite",
+      "location" : "https://github.com/sbooth/CSQLite?tab=readme-ov-file",
       "state" : {
         "revision" : "d230151b10c19cffb372b60d2fd2f797da473018",
         "version" : "3.45.3"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
