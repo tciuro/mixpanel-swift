@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/sbooth/CSQLite",
       "state" : {
-        "revision" : "d230151b10c19cffb372b60d2fd2f797da473018",
-        "version" : "3.45.3"
+        "branch" : "main",
+        "revision" : "d230151b10c19cffb372b60d2fd2f797da473018"
       }
     }
   ],
