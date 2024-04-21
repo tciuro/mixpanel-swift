@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		51DD567C1D306B740045D3DB /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD56791D306B740045D3DB /* Logger.swift */; };
 		51DD56831D306B7B0045D3DB /* PrintLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD56801D306B7B0045D3DB /* PrintLogging.swift */; };
 		51DD56841D306B7B0045D3DB /* FileLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD56811D306B7B0045D3DB /* FileLogging.swift */; };
+		597F7E312BD4E50B0066A513 /* CSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 597F7E302BD4E50B0066A513 /* CSQLite */; };
+		597F7E342BD4E5170066A513 /* CSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 597F7E332BD4E5170066A513 /* CSQLite */; };
+		597F7E362BD4E51C0066A513 /* CSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 597F7E352BD4E51C0066A513 /* CSQLite */; };
+		597F7E382BD4E5210066A513 /* CSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 597F7E372BD4E5210066A513 /* CSQLite */; };
 		673ABE3A21360CBE00B1784B /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673ABE3921360CBE00B1784B /* Group.swift */; };
 		67FF65E421878414005161FA /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673ABE3921360CBE00B1784B /* Group.swift */; };
 		67FF65E521878416005161FA /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673ABE3921360CBE00B1784B /* Group.swift */; };
@@ -134,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				597F7E382BD4E5210066A513 /* CSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				597F7E312BD4E50B0066A513 /* CSQLite in Frameworks */,
 				E15FF7C61D02C9E10076CDE3 /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				597F7E342BD4E5170066A513 /* CSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				597F7E362BD4E51C0066A513 /* CSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,11 +196,19 @@
 			name = Logging;
 			sourceTree = "<group>";
 		};
+		597F7E322BD4E5170066A513 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E11594731CFF1491007F8B4F = {
 			isa = PBXGroup;
 			children = (
 				E115947F1CFF1491007F8B4F /* Mixpanel */,
 				E115947E1CFF1491007F8B4F /* Products */,
+				597F7E322BD4E5170066A513 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -325,6 +341,9 @@
 			dependencies = (
 			);
 			name = Mixpanel_watchOS;
+			packageProductDependencies = (
+				597F7E372BD4E5210066A513 /* CSQLite */,
+			);
 			productName = Mixpanel_watchOS;
 			productReference = 86F86E81224404BD00B69832 /* Mixpanel.framework */;
 			productType = "com.apple.product-type.framework";
@@ -343,6 +362,9 @@
 			dependencies = (
 			);
 			name = Mixpanel;
+			packageProductDependencies = (
+				597F7E302BD4E50B0066A513 /* CSQLite */,
+			);
 			productName = Mixpanel;
 			productReference = E115947D1CFF1491007F8B4F /* Mixpanel.framework */;
 			productType = "com.apple.product-type.framework";
@@ -361,6 +383,9 @@
 			dependencies = (
 			);
 			name = Mixpanel_tvOS;
+			packageProductDependencies = (
+				597F7E332BD4E5170066A513 /* CSQLite */,
+			);
 			productName = Mixpanel_tvOS;
 			productReference = E12782B31D4AB4B30025FB05 /* Mixpanel.framework */;
 			productType = "com.apple.product-type.framework";
@@ -379,6 +404,9 @@
 			dependencies = (
 			);
 			name = Mixpanel_macOS;
+			packageProductDependencies = (
+				597F7E352BD4E51C0066A513 /* CSQLite */,
+			);
 			productName = Mixpanel_OSX;
 			productReference = E1F15FC91E64A10700391AE3 /* Mixpanel.framework */;
 			productType = "com.apple.product-type.framework";
@@ -424,6 +452,9 @@
 				Base,
 			);
 			mainGroup = E11594731CFF1491007F8B4F;
+			packageReferences = (
+				597F7E2F2BD4E50B0066A513 /* XCRemoteSwiftPackageReference "CSQLite" */,
+			);
 			productRefGroup = E115947E1CFF1491007F8B4F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -606,7 +637,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				NEW_SETTING = "";
@@ -641,7 +676,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mixpanel.Mixpanel;
@@ -650,7 +689,8 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.0;
@@ -806,7 +846,11 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mixpanel.Mixpanel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -854,15 +898,20 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mixpanel.Mixpanel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "${inherited}";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_INCLUDE_PATHS = "${SRCROOT}";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -883,7 +932,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mixpanel.Mixpanel;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = Mixpanel;
@@ -910,14 +963,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mixpanel.Mixpanel;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = Mixpanel;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -941,7 +999,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mixpanel.Mixpanel;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
@@ -970,7 +1032,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mixpanel.Mixpanel;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
@@ -978,7 +1044,8 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1033,6 +1100,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		597F7E2F2BD4E50B0066A513 /* XCRemoteSwiftPackageReference "CSQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sbooth/CSQLite";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.45.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		597F7E302BD4E50B0066A513 /* CSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 597F7E2F2BD4E50B0066A513 /* XCRemoteSwiftPackageReference "CSQLite" */;
+			productName = CSQLite;
+		};
+		597F7E332BD4E5170066A513 /* CSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 597F7E2F2BD4E50B0066A513 /* XCRemoteSwiftPackageReference "CSQLite" */;
+			productName = CSQLite;
+		};
+		597F7E352BD4E51C0066A513 /* CSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 597F7E2F2BD4E50B0066A513 /* XCRemoteSwiftPackageReference "CSQLite" */;
+			productName = CSQLite;
+		};
+		597F7E372BD4E5210066A513 /* CSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 597F7E2F2BD4E50B0066A513 /* XCRemoteSwiftPackageReference "CSQLite" */;
+			productName = CSQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E11594741CFF1491007F8B4F /* Project object */;
 }
